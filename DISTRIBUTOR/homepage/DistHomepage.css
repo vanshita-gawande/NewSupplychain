@@ -1,0 +1,508 @@
+body.distbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: 'monospace';
+    position: relative;
+    overflow: hidden;
+    /* Prevents scroll issues */
+}
+
+body.distbody::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(dist1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.dist-sidebar {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 733px;
+    margin-left: -20px;
+
+}
+
+.dist-user-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffc107;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: monospace;
+}
+
+.dist-profile-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dist-profile-img {
+    width: 85px;
+    height: 85px;
+    background: #ffc107;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 50%;
+    margin: 36px 12px 7px 86px;
+}
+
+.dist-nav {
+    width: 106%;
+}
+
+.dist-nav-item.active,
+.dist-nav-item:hover,
+.dist-nav-item-logout:hover {
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: monospace;
+    background-color: #ffffff;
+    font-weight: bold;
+    color: #ffc107;
+    width: 230px;
+    height: 50px;
+    margin: 10px 10px 25px 14px;
+    list-style: none;
+}
+
+.dist-nav-item,
+.dist-nav-item-logout {
+    padding: 15px;
+    width: 230px;
+    height: 50px;
+    margin: 10px 10px 25px 14px;
+    list-style: none;
+    text-align: center;
+    font-size: 16px;
+    font-family: monospace;
+    background-color: #ffc10794;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.dist-main-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.dist-journey-details {
+    background: #ffffff;
+    padding: 26px;
+    border-radius: 12px;
+    color: #000;
+    font-size: 17px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 850px;
+    margin: 50px auto;
+    font-family: monospace;
+}
+
+.dist-journey-details p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(0 0 0 / 10%);
+}
+
+
+.dist-journey-details p:last-child {
+    border-bottom: none;
+}
+
+.dist-journey-details i {
+    color: #00bcd4;
+    /* Teal color for idists */
+    font-size: 18px;
+}
+
+h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #ffc107;
+    font-family: monospace;
+}
+
+.Nodetails {
+    color: #ffffff;
+    align-content: center;
+    font-family: monospace;
+}
+
+.dist-enter-prod-ID {
+    margin-bottom: 15px;
+    width: 850px;
+    margin-left: 100px;
+}
+
+
+.dist-input {
+    margin-left: 70px;
+    width: 13%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+}
+
+.dist-form-group label {
+    margin-left: 7px;
+    font-family: monospace;
+}
+
+.dist-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: monospace;
+}
+
+/* Button */
+.dist-btn-primary {
+    align-items: center;
+    width: 210px;
+    margin-left: 670px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #ffc107;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: monospace;
+}
+
+.dist-btn-primary:hover {
+    background: #ffffff;
+    color: rgb(255, 183, 0);
+}
+
+.dist-product-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+.dist-product-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    font-family: monospace;
+    color: black;
+}
+
+.dist-product-image {
+    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+}
+
+.dist-product-details p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.dist-no-journey {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: monospace;
+    margin-top: 30px;
+}
+
+/* Timeline disttainer */
+.dist-journey-timeline {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    color: #000;
+    font-size: 17px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 850px;
+    margin: 52px 47px 51px 400px;
+    font-family: monospace;
+    position: relative;
+}
+
+/* Timeline UL */
+.dist-timeline {
+    list-style: none;
+    padding-left: 20px;
+    position: relative;
+}
+
+
+/* Timeline Items */
+.dist-timeline li {
+    position: relative;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+/* Timeline Dots */
+/* .dist-timeline li::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background: #ffc107;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+} */
+
+/* Timeline disttent */
+.dist-timeline-content {
+    background: #f5f5f5;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 10px;
+}
+
+/* Idists */
+.dist-timeline-content i {
+    color: #00bcd4;
+    font-size: 20px;
+}
+
+/* Styling for Journey Details */
+/* Styling for Product Journey Text */
+.dist-product-journey-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background: linear-gradient(90deg, #00bcd4, #007a99);
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.dist-product-journey-text:hover {
+    background: linear-gradient(90deg, #007a99, #00bcd4);
+    transform: scale(1.05);
+}
+
+.dist-enter-prod-ID {
+    margin-bottom: 15px;
+    /* padding: 15px 78px 20px 154px; */
+    width: 1619px;
+    margin-left: -69px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dist-homepage {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.dist-main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: none;
+    padding: 20px;
+}
+
+/* Split Layout */
+.dist-form-container {
+    width: 655px;
+    background: #ffffff;
+    border-radius: 12px;
+    border-color: #000000;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    margin-left: 100px;
+    height: 500px;
+}
+
+/* Left Section - Form */
+.dist-form-section {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Right Section - Image Preview */
+.dist-image-preview {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0f7fa;
+}
+
+.dist-image-preview img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+}
+
+/* Form Heading */
+.dist-form-section h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffc107;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+/* Form Grid */
+.dist-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Ensures equal 50-50 layout */
+    gap: 10px;
+}
+
+/* Form Group */
+.dist-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 184px;
+    margin-left: 20px;
+}
+
+.dist-form-group input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #000000;
+    background-color: #ffffff;
+    transition: 0.3s;
+    width: 250px;
+}
+
+.dist-form-group input::placeholder {
+    font-family: monospace;
+    color: #000000;
+}
+
+.dist-form-group input:focus {
+    border-color: #00796b;
+    box-shadow: 0px 0px 5px rgba(0, 121, 107, 0.4);
+}
+
+.dist-enter-prod-ID label {
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 70px;
+}
+
+/* Image Upload */
+.image-upload {
+    grid-column: 2;
+    /* Moves to the right side */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Align text properly */
+    justify-content: center;
+}
+
+/* Upload Label */
+.image-upload label {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* File Input */
+.image-upload input {
+    border: none;
+    padding: 8px;
+}
+
+
+
+.dist-form-group-submit {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 21px;
+    margin-left: 206px;
+    width: 31%;
+    padding: 12px;
+    border-radius: 8px;
+    background: #ffc107;
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.dist-form-group-submit:hover {
+    background: #a57c01;
+
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .dist-form-container {
+        flex-direction: column;
+    }
+
+    .dist-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dist-image-preview {
+        display: none;
+    }
+}

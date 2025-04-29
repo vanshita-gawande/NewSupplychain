@@ -1,0 +1,359 @@
+body.conlogin-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    position: initial;
+    overflow: hidden;
+    /* Prevents scroll issues */
+}
+
+body.conlogin-page::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(consumer2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1;
+
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.swal-overlay {
+    position: fixed !important;
+}
+
+.swal-modal {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+.swal2-popup {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+.con-login-text {
+    position: absolute;
+    bottom: 384px;
+    left: 805px;
+    font-size: 43px;
+    font-style: normal;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-family: impact;
+    border-bottom: 4px solid #ffffff;
+    padding-bottom: 5px;
+}
+
+.con-log-container-formm {
+    position: absolute;
+    top: 17%;
+    left: 23%;
+    background: rgb(0 0 0 / 0%);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+    border: 2px solid #fffefb8a;
+    padding: 22px;
+    margin-left: -214px;
+    margin-top: -63px;
+    margin-right: 667px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+    text-align: center;
+    max-width: 532px;
+    min-height: 307px;
+    width: 330%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.alert-danger {
+    background: rgba(255, 0, 0, 0.2);
+    color: #fff;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    width: 413px;
+    margin-left: 36px;
+    /* Adds space so buttons don’t shift out */
+}
+
+
+/* Heading */
+.log-in-welcome {
+    font-family: monospace;
+    font-size: 38px;
+    font-weight: 700;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    color: #ebf0f4;
+    padding: 15px;
+}
+
+/* Form Styling */
+.con-log-form-label {
+    color: rgba(255, 255, 255, 0.2);
+    color: rgb(255, 255, 255);
+    padding: 0px 0px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: monospace;
+    width: 48%;
+    font-weight: 100;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+
+
+}
+
+.con-log-form-control {
+    background: rgb(245 244 241 / 15%);
+    align-items: center;
+    border: 2px solid #f4f2f082;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+    width: 85%;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.con-log-form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: monospace;
+}
+
+.con-log-form-control:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Buttons */
+.con-log-button-containerr {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 22px;
+    margin-bottom: 45px;
+    width: 271px;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    /* padding: 10px 10px 10px 10px; */
+}
+
+.con-log-btn-btn-primary11 {
+    background: #ffffff;
+    color: #311e08;
+    font-family: sans-serif;
+    font-size: 17px;
+    border: none;
+    border-radius: 30px;
+    margin: 14px 13px 16px 13px;
+    width: 100px;
+    height: 53px;
+
+}
+
+.con-log-btn-btn-primary11:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+.con-log-btn-btn-secondary11 {
+    background: #ffc107;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    margin: 12px -150px 17px 72px;
+    width: 100px;
+    height: 53px;
+}
+
+.con-log-btn-btn-secondary11:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+/* For small screens (max-width: 768px) */
+@media (max-width: 768px) {
+    body.conlogin-page {
+        display: block;
+        padding: 10px;
+        height: auto;
+    }
+
+    .con-login-text {
+        position: static;
+        text-align: center;
+        font-size: 30px;
+        bottom: auto;
+        left: auto;
+    }
+
+    .con-log-container-formm {
+        margin-left: 0;
+        margin-top: 20px;
+        margin-right: 0;
+        width: 90%;
+        box-shadow: none;
+        padding: 15px;
+    }
+
+    .con-log-form-label {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .con-log-form-control {
+        width: 100%;
+    }
+
+    .con-log-button-containerr {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .con-log-btn-btn-primary11,
+    .con-log-btn-btn-secondary11 {
+        width: 48%;
+        margin: 0;
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 30px;
+    }
+
+    .con-log-btn-btn-primary11:hover,
+    .con-log-btn-btn-secondary11:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+}
+
+/* For very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .con-login-text {
+        font-size: 24px;
+    }
+
+    .con-log-container-formm {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .log-in-welcome {
+        font-size: 30px;
+    }
+
+    .con-log-form-label {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .con-log-form-control {
+        font-size: 14px;
+    }
+
+    .con-log-btn-btn-primary11,
+    .con-log-btn-btn-secondary11 {
+        font-size: 14px;
+    }
+
+    .con-log-button-containerr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-right: 40%;
+    }
+
+    .con-log-btn-btn-primary11,
+    .con-log-btn-btn-secondary11 {
+        width: 100%;
+
+    }
+}
+
+/* For screens between 481px and 1024px (tablet and smaller laptop screens) */
+@media (min-width: 481px) and (max-width: 1024px) {
+    body.conlogin-page {
+        display: block;
+        padding: 10px;
+        height: auto;
+    }
+
+    .con-login-text {
+        position: static;
+        text-align: center;
+        font-size: 36px;
+        bottom: auto;
+        left: auto;
+    }
+
+    .con-log-container-formm {
+        margin-left: 0;
+        margin-top: 20px;
+        margin-right: 0;
+        width: 80%;
+        box-shadow: none;
+        padding: 25px;
+    }
+
+    .con-log-form-label {
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .con-log-form-control {
+        width: 100%;
+    }
+
+    .con-log-button-containerr {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .con-log-btn-btn-primary11,
+    .con-log-btn-btn-secondary11 {
+        width: 48%;
+        margin: 0;
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 30px;
+        margin-right: 10%;
+    }
+
+    .con-log-btn-btn-primary11:hover,
+    .con-log-btn-btn-secondary11:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+}

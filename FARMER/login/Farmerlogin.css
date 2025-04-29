@@ -1,0 +1,260 @@
+body.farlogin-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  position: initial;
+  overflow: hidden;
+  /* Prevents scroll issues */
+  }
+  
+  body.farlogin-page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(wheat-2391348.jpg) no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(2px);
+  z-index: -1;
+  
+  }
+  
+  .no-scroll {
+  overflow: hidden;
+  }
+  
+  .swal-overlay {
+  position: fixed !important;
+  }
+  
+  .swal-modal {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  }
+  
+  .swal2-popup {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  }
+  /* chnages in css */
+  /* Main container wrapping both description and form */
+  .farlogin-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  z-index: 1;
+  }
+  
+  /* Description section (keep current text styling) */
+  .farm-login-description {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* You can adjust text alignment as needed */
+  text-align: left;
+  }
+  
+  .farmer-login-text {
+  position: absolute;
+  bottom: 384px;
+  left: 805px;
+  font-size: 43px;
+  font-style: normal;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-family: impact;
+  border-bottom: 4px solid #ffffff;
+  padding-bottom: 5px;
+  }
+  
+  .farm-log-container-formm {
+  position: absolute;
+  top: 17%;
+  left: 23%;
+  background: rgb(0 0 0 / 0%);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  border: 2px solid #fffefb8a;
+  padding: 22px;
+  margin-left: -214px;
+  margin-top: -63px;
+  margin-right: 667px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+  text-align: center;
+  max-width: 532px;
+  min-height: 307px;
+  width: 330%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  }
+  .alert-danger {
+  background: rgba(255, 0, 0, 0.2);
+  color: #fff;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 10px;
+  margin-bottom: 10px;
+  width: 413px;
+  margin-left: 36px;
+  }
+  /* Heading */
+  .log-in-welcome {
+  font-family: monospace;
+  font-size: 38px;
+  font-weight: 700;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  color: #ebf0f4;
+  padding: 15px;
+  }
+  /* Form Styling */
+  .farm-log-form-label {
+  color: rgba(255, 255, 255, 0.2);
+  color: rgb(255, 255, 255);
+  padding: 0px 0px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: monospace;
+  width: 48%;
+  font-weight: 100;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 40px;
+  }
+  
+  .farm-log-form-control {
+  background: rgb(245 244 241 / 15%);
+  align-items: center;
+  border: 2px solid #f4f2f082;
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+  outline: none;
+  width: 85%;
+  font-family: sans-serif;
+  font-weight: 100;
+  }
+  
+  .farm-log-form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: monospace;
+  }
+  
+  .farm-log-form-control:focus {
+  background: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Buttons */
+  .farm-log-button-containerr {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 22px;
+  margin-bottom: 45px;
+  width: 271px;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  /* padding: 10px 10px 10px 10px; */
+  }
+  
+  .farm-log-btn-btn-primary11 {
+  background: #ffffff;
+  color: #311e08;
+  font-family: sans-serif;
+  font-size: 17px;
+  border: none;
+  border-radius: 30px;
+  margin: 14px 13px 16px 13px;
+  width: 100px;
+  height: 53px;
+  }
+  
+  .farm-log-btn-btn-primary11:hover {
+  background: rgba(255, 255, 255, 0.3);
+  }
+  .farm-log-btn-btn-secondary11 {
+  background: #ffc107;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  margin: 12px -150px 17px 72px;
+  width: 100px;
+  height: 53px;
+  }
+  
+  .farm-log-btn-btn-secondary11:hover {
+  background: rgba(255, 255, 255, 0.3);
+  }
+  /* RESPONSIVE: For screens between 481px and 1024px */
+  @media (max-width: 1024px) {
+  .farlogin-wrapper {
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  }
+  
+  .farm-login-description,
+  .farm-log-container-formm {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  }
+  
+  .farmer-login-text {
+  font-size: 36px;
+  text-align: center;
+  position: static;
+  margin-bottom: 20px;
+  }
+  
+  .farm-log-button-containerr {
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .farm-log-btn-btn-primary11,
+  .farm-log-btn-btn-secondary11 {
+  width: 90%;
+  margin: 5px 0;
+  }
+  }
+  
+  /* For very small screens (max-width: 480px) */
+  @media (max-width: 480px) {
+  .farmer-login-text {
+  font-size: 30px;
+  }
+  .log-in-welcome {
+  font-size: 30px;
+  }
+  .farm-log-button-containerr {
+  flex-direction: column;
+  }
+  .farm-log-btn-btn-primary11,
+  .farm-log-btn-btn-secondary11 {
+  width: 100%;
+  }
+  }
